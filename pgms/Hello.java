@@ -27,9 +27,21 @@ public class Hello {
 
     public static void array() {
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        // There are several methods for printing the array
+        // Method 1
         System.out.println(cars[0]);
         System.out.println(cars[1]);
         System.out.println(cars[2]);
         System.out.println(cars[3]);
+
+        // Method 2
+        for (String car : cars)
+            System.out.print(car + " ");
+        System.out.println();
+
+        // Method 3
+        for (int i = 0; i < cars.length; i++)
+            System.out.print(cars[i] + " ");
+        System.out.println();
     }
 }
